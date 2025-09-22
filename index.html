@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fayaz Balajipeta | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Dark Mode Toggle (CSS-only) -->
+  <input type="checkbox" id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <label for="themeToggle" class="theme-toggle-label" title="Toggle dark mode">
+    <span class="sun">☀</span>
+    <span class="moon">🌙</span>
+  </label>
+
+  <div class="site">
+    <!-- Hero Section -->
+    <header id="home" class="section hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 class="name">Fayaz Balajipeta</h1>
+            <p class="tagline">Software Developer | Frontend Developer</p>
+            <div class="cta">
+              <a class="btn primary" href="https://drive.google.com/file/d/1TekQxlUMgVq9L-YxeVDmtvdFiAsCqkV6/view?usp=sharing" target="_blank" rel="noopener">View Resume</a>
+              <a class="btn outline" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            
+            <img src="./profile.jpg" alt="Profile image" class="profile-image" style="z-index: 100;">
+          </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About">▼</a>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="objective fade-in">
+          I'm a Computer Science and Engineering student specializing in Artificial Intelligence, passionate about building innovative solutions and continuously learning new technologies. To build a successful career by applying my skills and continuously learning new technologies, and contributing to innovative and impactful projects. Innovative software programmer skilled in C, Python, MySQL, HTML, Java, and CSS.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="section education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Parul University</h3>
+              <p>B-Tech in CSE-AI (2022–2026)</p>
+              <p><strong>CGPA:</strong> 7.81/10</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Narayana Junior College</h3>
+              <p>MPC</p>
+              <p><strong>Marks:</strong> 910/1000</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>CVR Memorial English Medium High School</h3>
+              <p><strong>Marks:</strong> 600/600</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-groups">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <ul>
+              <li>
+                <span>Java</span>
+                <span class="bar" style="--value:85%"><i></i></span>
+              </li>
+              <li>
+                <span>C</span>
+                <span class="bar" style="--value:75%"><i></i></span>
+              </li>
+              <li>
+                <span>Java Script</span>
+                <span class="bar" style="--value:55%"><i></i></span>
+              </li>
+              
+              <li>
+                <span>HTML</span>
+                <span class="bar" style="--value:90%"><i></i></span>
+              </li>
+              <li>
+                <span>CSS</span>
+                <span class="bar" style="--value:85%"><i></i></span>
+              </li>
+              <li>
+                <span>MySQL</span>
+                <span class="bar" style="--value:70%"><i></i></span>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Frameworks / Libraries</h3>
+            <div class="pill-list">
+              <span class="pill">Numpy</span>
+              <span class="pill">Pandas</span>
+              <span class="pill">Scikit-Learn</span>
+              <span class="pill">Matplotlib</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <div class="pill-list">
+              <span class="pill">VS Code</span>
+              <span class="pill">GitHub</span>
+              <span class="pill">Oracle VirtualBox</span>
+              <span class="pill">Pycharm</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Concepts</h3>
+            <div class="pill-list">
+              <span class="pill">Data Structures &amp; Algorithms</span>
+              <span class="pill">OOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+          <a class="project-card" href="https://github.com/FayazBalajipeta/netflix" target="_blank" rel="noopener">
+            <div class="card-media"><img src="https://camo.githubusercontent.com/af72abd663820667ea7814cd287d58dd929e097c3693c03b671f2da65a984d4f/68747470733a2f2f7777772e666c617368666c792e6e65742f77702f77702d636f6e74656e742f75706c6f6164732f323032322f30382f4e6574666c69782e6a706567" alt="Netflix project preview"></div>
+            <div class="card-body">
+              <h3>Netflix View Project</h3>
+              <p>Interactive clone showcasing UI and state-driven interactions.</p>
+              <span class="chip">GitHub →</span>
+            </div>
+          </a>
+          <a class="project-card" href="https://github.com/FayazBalajipeta/Social-Media-Sentiment-Analysis" target="_blank" rel="noopener">
+            <div class="card-media"><img src="https://www.aimtechnologies.co/wp-content/uploads/2023/08/Sentiment-Analysis-For-Social-Media.png" alt="Social Media Sentiment Analysis preview"></div>
+            <div class="card-body">
+              <h3>Social Media Sentiment Analysis</h3>
+              <p>Pipeline using NLP to analyze sentiment trends on platforms.</p>
+              <span class="chip">GitHub →</span>
+            </div>
+          </a>
+          <a class="project-card" href="https://github.com/FayazBalajipeta/fault_detection" target="_blank" rel="noopener">
+            <div class="card-media"><img src="https://www.jeftechno.com/assets/images/blog/Power-System%20Studies.jpg" alt="Power System Fault Detection preview"></div>
+            <div class="card-body">
+              <h3>Power System Fault Detection</h3>
+              <p>Detection system leveraging data patterns to flag anomalies.</p>
+              <span class="chip">GitHub →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internship (Timeline) -->
+    <section id="internship" class="section internship">
+      <div class="container">
+        <h2 class="section-title">Internship</h2>
+        <div class="timeline compact">
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Artificial Intelligence using Python</h3>
+              <p>Languify (Coincent)</p>
+              <p>Aug 2024 – Sep 2024</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Artificial Intelligence &amp; IBM Cloud Technologies</h3>
+              <p>Edunet Foundation and IBM</p>
+              <p>Jun 2025</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Frontend using HTML, CSS and JavaScript</h3>
+              <p>Edunet Foundation and IBM</p>
+              <p>Jun 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strengths & Hobbies -->
+    <section id="strengths" class="section strengths">
+      <div class="container">
+        <h2 class="section-title">Strengths &amp; Hobbies</h2>
+        <div class="icon-cards">
+          <div class="icon-card"><span>🔥</span><p>Dedication</p></div>
+          <div class="icon-card"><span>⏱</span><p>Time management</p></div>
+          <div class="icon-card"><span>🧭</span><p>Responsibility</p></div>
+          <div class="icon-card"><span>🧩</span><p>Problem-solving</p></div>
+          <div class="icon-card"><span>🤖</span><p>Exploring AI technologies</p></div>
+          <div class="icon-card"><span>🎧</span><p>Listening to music</p></div>
+          <div class="icon-card"><span>🎬</span><p>Watching movies</p></div>
+          <div class="icon-card"><span>📷</span><p>Photography</p></div>
+          <div class="icon-card"><span>🏏</span><p>Cricket</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Awards with CSS-only Modals -->
+    <section id="certifications" class="section certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications &amp; Awards</h2>
+        <div class="cert-grid">
+          <a href="https://drive.google.com/file/d/141JHNJlbqSMg96SrSyJoZ2zsZ0ZvYhm8/view?usp=drive_link" class="cert-card" target="_blank" rel="noopener">
+            <h3>Database Management System — Infosys</h3>
+            <span class="chip">View Certificate</span>
+          </a>
+          <a href="https://drive.google.com/file/d/1iQK9mgt19zNQvemVA85USSqxFnZFeiZi/view?usp=sharing" class="cert-card" target="_blank" rel="noopener">
+            <h3>Artificial Intelligence using Python — Languify (Coincent)</h3>
+            <span class="chip">View Certificate</span>
+          </a>
+          <a href="https://drive.google.com/file/d/15IRb7WLedds56sgxN0kJmNfTF--2In4w/view?usp=sharing" class="cert-card" target="_blank" rel="noopener">
+            <h3>Artificial Intelligence and IBM Cloud — Edunet Foundation</h3>
+            <span class="chip">View Certificate</span>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrap">
+          <form class="contact-form" action="#" method="post" onsubmit="">
+            <div class="field">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="field">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="field">
+              <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button class="btn primary" type="submit" id="messageSend">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:fayazbalajipeta786@gmail.com">fayazbalajipeta786@gmail.com</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fayaz-balajipeta-977632266/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/FayazBalajipeta" target="_blank" rel="noopener">GitHub Profile</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+917569110350">+91 7569110350</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year">2025</span> Fayaz Balajipeta. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Smooth scroll for anchor focus (CSS handles behavior, no JS needed) -->
+</body>
+</html>
+
+
+
