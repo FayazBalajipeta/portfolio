@@ -1,4 +1,42 @@
-// Theme toggle removed
+// Theme Toggle Functionality
+(function() {
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+  
+  // Check for saved theme preference or default to dark mode
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+  body.setAttribute('data-theme', currentTheme);
+  
+  if (currentTheme === 'light') {
+    themeToggle.checked = true;
+  }
+  
+  themeToggle.addEventListener('change', function() {
+    const newTheme = this.checked ? 'light' : 'dark';
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+})();
+
+// Mobile Navigation Toggle
+(function() {
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  
+  navToggle.addEventListener('click', function() {
+    navToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+  
+  // Close mobile menu when clicking on a link
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      navToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+})();
 
 // Current year
 (function () {
